@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0" version="26.1.0">
+  <diagram id="_CFwDeO4Aayom5AA90hv" name="第 1 页">
+    <mxGraphModel dx="1826" dy="1557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TWxUser&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ TWxUser(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- cAddressId: String&lt;br/&gt;- cSessionKey: String&lt;br/&gt;- cIcon: String&lt;br/&gt;- cNickName: String&lt;br/&gt;- cAddress: JSONArray&lt;br/&gt;- cOpenid: String&lt;br/&gt;- serialVersionUID: long&lt;br/&gt;- cPhone: String&lt;br/&gt;- cTuan: String&lt;br/&gt;- cUnionid: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ setcIcon(String): void&lt;br/&gt;+ getcOpenid(): String&lt;br/&gt;+ getcAddress(): JSONArray&lt;br/&gt;+ setcSessionKey(String): void&lt;br/&gt;+ getcAddressId(): String&lt;br/&gt;+ setcUnionid(String): void&lt;br/&gt;+ getcSessionKey(): String&lt;br/&gt;+ setcOpenid(String): void&lt;br/&gt;+ getcNickName(): String&lt;br/&gt;+ getcIcon(): String&lt;br/&gt;+ getcPhone(): String&lt;br/&gt;+ setcNickName(String): void&lt;br/&gt;+ setcAddress(JSONArray): void&lt;br/&gt;+ setcTuan(String): void&lt;br/&gt;+ getcTuan(): String&lt;br/&gt;+ setcAddressId(String): void&lt;br/&gt;+ setcPhone(String): void&lt;br/&gt;+ getcUnionid(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="-496" width="219" height="726" as="geometry" />
+        </mxCell>
+        <mxCell id="node1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TWxUserController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ TWxUserController(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- wxUserService: TWxUserService&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updateMr(JSONObject): TWxUser&lt;br/&gt;+ removeAddress(JSONObject): TWxUser&lt;br/&gt;+ saveOrupdateAddress(JSONObject): TWxUser&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-350" y="-290" width="309" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="node0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;TWxUserMapper&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="-220" width="166" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-1" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=-0.001;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="node2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-41" y="-190" as="sourcePoint" />
+            <mxPoint x="119" y="-190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-2" value="«interface»&lt;br&gt;&lt;b&gt;TWxUserService&lt;/b&gt;" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="-10" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-3" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-250" y="-100" as="sourcePoint" />
+            <mxPoint x="-250" y="-10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-4" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-0.5556" y="20" relative="1" as="geometry">
+            <mxPoint x="-170" y="-100" as="sourcePoint" />
+            <mxPoint x="-170" y="-10" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-6" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=-0.02;entryY=0.725;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.576;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="e75ZAL-NvFtL9feLvAWB-2" target="node2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-130" y="30" as="sourcePoint" />
+            <mxPoint x="30" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-7" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="580" y="-210" as="sourcePoint" />
+            <mxPoint x="369" y="-170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-9" value="Classname" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="-60" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-12" value="+ TWxUserServiceImpl():" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="e75ZAL-NvFtL9feLvAWB-9" vertex="1">
+          <mxGeometry y="26" width="190" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-13" value="1" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.153;exitY=-0.037;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="e75ZAL-NvFtL9feLvAWB-9" edge="1">
+          <mxGeometry x="-1" y="760" width="160" relative="1" as="geometry">
+            <mxPoint x="610" y="-70" as="sourcePoint" />
+            <mxPoint x="610" y="-185" as="targetPoint" />
+            <mxPoint x="1" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e75ZAL-NvFtL9feLvAWB-14" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-0.6923" y="-20" relative="1" as="geometry">
+            <mxPoint x="700" y="-60" as="sourcePoint" />
+            <mxPoint x="700" y="-190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="-80" />
+              <mxPoint x="700" y="-80" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-556DXWHwNHM7NmQEgl-1" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.321;exitY=1.022;exitDx=0;exitDy=0;entryX=0.41;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="e75ZAL-NvFtL9feLvAWB-12" target="e75ZAL-NvFtL9feLvAWB-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="646" y="21" />
+              <mxPoint x="646" y="257" />
+              <mxPoint x="-228" y="257" />
+            </Array>
+            <mxPoint x="646" y="80" as="sourcePoint" />
+            <mxPoint x="-220" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-556DXWHwNHM7NmQEgl-2" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.998;entryY=0.678;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="e75ZAL-NvFtL9feLvAWB-12" target="node2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="661" y="80" as="sourcePoint" />
+            <mxPoint x="390" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-556DXWHwNHM7NmQEgl-3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;1&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="-170" width="40" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
